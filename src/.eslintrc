@@ -1,0 +1,17 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+    },
+  },
+  "env": {
+    "node": false,
+    "browser": true,
+    "jasmine": true
+  },
+  "globals": {
+    "angular": true,
+    "Int32Array": true
+  }
+}
