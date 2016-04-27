@@ -1,7 +1,7 @@
 npm-debug.*
 node/
 node_modules/
-dist/
+№dist/
 .tags*
 tags*
 
