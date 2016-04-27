@@ -12,7 +12,12 @@ export default function UnauthorizedInterceptorBuilder($q, $log, RequestBuilder,
     function redirect(response) {
       $log.info('Intercepting. ' + response.config.url);
       const url = response.headers('www-authenticate');
-      $log.info(response);
+      //$log.info(response);
+      var headers = response.headers();
+      $log.info('response headers:');
+      angular.forEach(headers, function(item, key) {
+        $log.info(key + ' : ' + item);
+      });
       $log.info('www-authenticate header: ' + url);
       if (url) {
         const system = TargetSystemResolver.system(response.config.url);
